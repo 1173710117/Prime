@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: Prime
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://172.17.0.2:8761/eureka
